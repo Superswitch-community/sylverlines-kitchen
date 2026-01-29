@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Catering</title>
+  <script src="/static/index.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-yellow-500 text-gray-900 sticky top-0 z-50 shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Delicious Catering</h1>
+      <div class="hidden md:flex space-x-6 text-lg">
+        <a href="#home" class="hover:text-gray-700">Home</a>
+        <a href="#services" class="hover:text-gray-700">Services</a>
+        <a href="#menu" class="hover:text-gray-700">Menu</a>
+        <a href="#contact" class="hover:text-gray-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative h-[70vh] flex items-center justify-center text-center">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1500&q=80" class="absolute inset-0 w-full h-full object-cover brightness-75" />
+    <div class="relative z-10 text-white px-6">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Delicious Catering for Every Event</h2>
+      <p class="text-lg md:text-2xl mb-6">We bring flavor, style, and elegance to your table.</p>
+      <a href="#contact" class="bg-white text-yellow-500 font-bold px-6 py-3 rounded hover:bg-gray-200 transition">Book Now</a>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="container mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-yellow-600 text-center mb-10">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <h4 class="text-xl font-semibold mb-3">Event Catering</h4>
+        <p class="text-gray-700">Perfect catering for weddings, birthdays, and corporate events.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <h4 class="text-xl font-semibold mb-3">Menu Customization</h4>
+        <p class="text-gray-700">Tailor your menu to match your event theme and dietary preferences.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <h4 class="text-xl font-semibold mb-3">Delivery & Setup</h4>
+        <p class="text-gray-700">We deliver, setup, and ensure everything is perfect for your event.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="bg-gray-200 py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-yellow-600 text-center mb-10">Our Popular Dishes</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Grilled Salmon</h4>
+            <p class="text-gray-700 mb-2">$25.00</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 w-full">Order Now</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1617196030571-7d4f9e165a5d?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Pasta Primavera</h4>
+            <p class="text-gray-700 mb-2">$18.00</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 w-full">Order Now</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600891963964-b5f0ef063872?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Chocolate Cake</h4>
+            <p class="text-gray-700 mb-2">$12.00</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 w-full">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOKING FORM -->
+  <section id="contact" class="container mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-yellow-600 text-center mb-10">Book Your Event</h3>
+    <form class="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-8 space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-30
